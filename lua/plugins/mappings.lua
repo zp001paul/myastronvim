@@ -3,6 +3,24 @@ return {
     "AstroNvim/astrocore",
     ---@type AstroCoreOpts
     opts = {
+      options = {
+        opt = { -- vim.opt.<key>
+          relativenumber = true, -- sets vim.opt.relativenumber
+          number = true, -- sets vim.opt.number
+          spell = false, -- sets vim.opt.spell
+          signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+          wrap = true, -- sets vim.opt.wrap
+          tabstop = 4,
+          shiftwidth = 4,
+          softtabstop = 4,
+          expandtab = true,
+        },
+        -- g = { -- vim.g.<key>
+        --   -- configure global vim variables (vim.g)
+        --   -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
+        --   -- This can be found in the `lua/lazy_setup.lua` file
+        -- },
+      },
       mappings = {
         -- first key is the mode
         i = {
