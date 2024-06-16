@@ -14,6 +14,7 @@ return {
           shiftwidth = 4,
           softtabstop = 4,
           expandtab = true,
+          so = 5,
         },
         -- g = { -- vim.g.<key>
         --   -- configure global vim variables (vim.g)
